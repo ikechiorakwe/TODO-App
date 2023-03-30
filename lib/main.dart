@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:my_to_do/Models/todo_model.dart';
 import 'package:my_to_do/Views/my_todo.dart';
+import 'package:my_to_do/Views/sign_in.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -42,7 +43,8 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const MyTodoScreen(),
+        // home: const MyTodoScreen(),
+        home: MySignInPage(),
       ),
     );
   }
